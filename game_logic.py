@@ -1,3 +1,6 @@
+from random_no_generator import generate_random_number
+from get_user_guess import get_user_guess
+
 def play_game():
     print("welcome to the number guessing game ")
     random_number=generate_random_number()
@@ -10,5 +13,7 @@ def play_game():
         elif guess > random_number:
             print("too high...")
         else:
-            print("congratulations you guessed the no. in {attemps}attemps")
+            print(f"congratulations you guessed the no. in {attemps} attemps")
             break
+
+play_game()
